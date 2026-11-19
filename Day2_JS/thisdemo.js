@@ -1,3 +1,5 @@
+//this points to the current object being selected
+//methods can also be accessed through it
 let area = {
     length: 5,
     breadth: 7,

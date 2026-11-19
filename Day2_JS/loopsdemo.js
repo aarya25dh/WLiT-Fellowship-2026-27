@@ -3,6 +3,7 @@
 // let x = 75
 // console.log(x>50?"x is greater than 50":"x is less than 50"); //ternary operator
 
+//conditionals
 // let grade = 80
 // if(grade>=90){
 //     console.log("Grade A")
@@ -16,8 +17,11 @@
 // else{
 //     console.log("Grade F")
 // }
+
+//ternary operator
 // console.log(grade>80?"Grade A":"Grade F")
 
+//switch case operator
 let x = 6
 switch(x){
     case(1):

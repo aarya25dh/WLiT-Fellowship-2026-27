@@ -9,9 +9,6 @@ multiply(5,4);
 
 //var x = () => { } arrow function
 //to call the function, use the function name followed by parentheses
-// () is parentheses to pass parameters
-// {} is curly braces for function
-// [] for arrays
 
 var doSomethingElse = () => {
     console.group("This is an arrow function");
