@@ -4,13 +4,13 @@ Welcome to my **Women Leaders in Technology (WLiT) Fellowship 2026/27** reposito
 
 This repository documents my learning journey throughout the WLiT bootcamp, a 15-day intensive program combining technical training, leadership development, hands-on assignments, collaborative learning and hackathon activities.
 
-The program focuses on building practical technical skills, exploring AI-powered development and strengthening the leadership, teamwork and problem-solving abilities needed to create meaningful technological solutions.
+The program mainly focused on building practical technical skills, exploring AI-powered development and strengthening the leadership, teamwork and problem-solving abilities needed to create meaningful technological solutions.
 
 ---
 
 ## About the Bootcamp
 
-The bootcamp brings together two major learning tracks:
+The bootcamp brought together two major learning tracks:
 
 **1. Technical Sessions (10 AM – 1 PM)**
 
@@ -20,13 +20,13 @@ Hands-on technical training covering web development, JavaScript, backend develo
 
 Leadership and personal development sessions focusing on goal setting, teamwork, time management, empathy, communication, leadership values, design thinking and impactful problem-solving.
 
-The program concludes with a collaborative hackathon where participants apply their learning to design, develop and deploy practical solutions.
+The program concluded with a collaborative hackathon where participants applied their learning to design, develop and deploy practical solutions.
 
 ---
 
 ## Technologies & Tools
 
-The bootcamp introduces a range of technologies and tools across web development, backend engineering and AI integration.
+The bootcamp introduced a range of technologies and tools across web development, backend engineering and AI integration.
 
 | Category           | Technologies & Tools  |
 | ------------------ | --------------------- |
@@ -44,7 +44,7 @@ The bootcamp introduces a range of technologies and tools across web development
 
 ## Assignments & Submissions
 
-All individual assignments, coding exercises and practical implementations will be maintained in this repository.
+All individual assignments, coding exercises and practical implementations are documented in this repository.
 
 ### Submission Guidelines
 
@@ -56,11 +56,11 @@ All individual assignments, coding exercises and practical implementations will 
 
 ---
 
-## 🏆Hackathon & Projects
+## Hackathon & Projects
 
-The hackathon is an opportunity to put the technical and leadership skills acquired during the bootcamp into practice.
+The hackathon provided an opportunity to put the technical and leadership skills acquired during the bootcamp into practice.
 
-The development process includes:
+The development process included:
 
 1. **Problem Identification:** Identify a meaningful problem worth solving.
 2. **Spec-first Planning:** Draft product specifications and user stories.
@@ -71,20 +71,20 @@ The development process includes:
 7. **Deployment:** Deploy the final application using Vercel or Render.
 8. **Demonstration:** Present the project and communicate its impact.
 
-Project source code, documentation and relevant resources will be maintained in the `Hackathons/` directory.
+Project source code, documentation and relevant resources are maintained in the `Hackathons/` directory.
 
 ---
 
 ## Learning Objectives
 
-Through this fellowship, I aim to:
+Through this fellowship, I aimed to:
 
 - Strengthen my foundations in web development and programming.
 - Understand full-stack application development.
 - Explore LLM integration and AI-powered applications.
 - Learn to build and deploy practical software solutions.
 - Develop responsible AI practices and evaluate AI-generated outputs.
-- Improve problem-solving, teamwork and communication.
+- Improve problem-solving, teamwork and communication skills.
 - Strengthen leadership, presentation and collaboration skills.
 - Gain practical experience through assignments and hackathons.
 
@@ -92,9 +92,9 @@ Through this fellowship, I aim to:
 
 ## Learning Progress
 
-This repository will serve as a continuous record of my progress throughout the WLiT Fellowship 2026/27.
+This repository serves as a continuous record of my progress throughout the WLiT Fellowship 2026/27.
 
-It will include:
+It includes:
 
 - Daily learning notes and technical exercises.
 - Individual assignments and implementations.
