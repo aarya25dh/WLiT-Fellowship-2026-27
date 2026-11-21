@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Changing the text colour</title>
+  </head>
+  <body>
+    <!-- Task 2: 
+     Create a web page that does the following:
+     1.Displays a form that asks for:
+     Text color (e.g., red, blue, #ff0000).
+     Background color (e.g., white, black, #ffffff).
+     The content of the text (e.g., "Hello, World!").
+     2.When the user submits the form: The page should display the text below the form with the user's chosen text color, background color, and text content. -->
+    <h2>Task 2 - Change The Text Colour</h2>
+    <form id="myForm">
+      <label>Text Colour:</label>
+      <input
+        type="text"
+        id="textColor"
+        placeholder="Enter the font colour here"
+      /><br /><br />
+      <label>Background Colour:</label>
+      <input
+        type="text"
+        id="bgColor"
+        placeholder="Enter the background colour here"
+      /><br /><br />
+      <label>Text Content:</label>
+      <input
+        type="text"
+        id="content"
+        placeholder="Enter your text here"
+      /><br /><br />
+      <button type="submit" onclick="displaytext()">Submit</button>
+    </form>
+    <br /><br />
+    <div id="output"></div>
+    <script>
+      document
+        .getElementById("myForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          let textColor = document.getElementById("textColor").value;
+          let bgColor = document.getElementById("bgColor").value;
+          let content = document.getElementById("content").value;
+
+          let output = document.getElementById("output");
+
+          output.textContent = content;
+          output.style.color = textColor;
+          output.style.backgroundColor = bgColor;
+          output.style.padding = "10px";
+        });
+    </script>
+  </body>
+</html>
