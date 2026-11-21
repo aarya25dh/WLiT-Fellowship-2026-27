@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 let tasks = [
-  { id: 1, title: "Learn Express Routes", completed: false },
+  { id: 1, title: "Learn Express Routes and Components", completed: true },
   { id: 2, title: "Test with Thunder Client", completed: true }
 ];
 
