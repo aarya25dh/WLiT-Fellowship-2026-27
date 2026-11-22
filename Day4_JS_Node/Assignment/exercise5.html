@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Delete Task</title>
+    <style>
+      #taskList li {
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>My Tasks</h2>
+    <ul id="taskList"></ul>
+    <p id="statusMsg"></p>
+    <script>
+      const API_URL = "https://jsonplaceholder.typicode.com/todos";
+      let tasks = [
+        { id: 1, title: "Learn JavaScript" },
+        { id: 2, title: "Learn Node.js" },
+        { id: 3, title: "Practice Fetch API" },
+      ];
+      const statusMsg = document.getElementById("statusMsg");
+      function renderTasks() {
+        const taskList = document.getElementById("taskList");
+        taskList.innerHTML = "";
+        tasks.forEach((task) => {
+          const li = document.createElement("li");
+          li.textContent = task.title + " ";
+          const button = document.createElement("button");
+          button.textContent = "Delete";
+          button.onclick = (event) => deleteTask(task.id, event);
+          li.appendChild(button);
+          taskList.appendChild(li);
+        });
+      }
+
+      async function deleteTask(id, event) {
+        event.stopPropagation(); //Don't toggle completion
+        try {
+          const res = await fetch(`${API_URL}/${id}`, {
+            method: "DELETE",
+          });
+          if (!res.ok) throw new Error("Delete failed");
+          tasks = tasks.filter((t) => t.id !== id);
+          renderTasks();
+          console.log(`Deleted task #${id}`);
+        } catch (err) {
+          statusMsg.textContent = "Could not delete task.";
+          console.error(err);
+        }
+      }
+      renderTasks();
+    </script>
+  </body>
+</html>
