@@ -15,11 +15,27 @@ const prompt = [
     {inlineData: {mimeType:'image/jpg', data:imageData}}
 ]
 
+const follow_up_request = [
+    "What Color is it?"
+];
+
 async function main(){
+    const history = []; //the whole conversation history, starts empty
+    history.push({role:'user', parts:prompt});
     const response = await ai.models.generateContent({
-        model: 'gemini-3.1-flash-lite',
-        contents: prompt
+        model: 'gemini-3.5-flash-lite',
+        contents: history
     });
     console.log(response.text);
+    history.push({role:'model', parts:[{text:'response.text'}]});
+    for (const follow_up of follow_up_request){
+        history.push({role:'user', parts: [{text: follow_up}]});
+        const response2 = await ai.models.generateContent({
+        model:'gemini-3.5-flash-lite',
+        contents: history,
+    });
+        console.log(response2.text);
+        history.push({role:'model', parts:[{text: response2.text}]});
+    }
 }
 main();
