@@ -4,6 +4,8 @@
 var checknumber = (x) => {
     if(x > 0){
         console.log("The number is positive");
+    }else if(x == 0){
+        console.log("The number is zero");
     }else{
         console.log("The number is negative");
     }
@@ -16,13 +18,14 @@ console.log(x>0?"The number is positive":"The number is negative");
 
 // Task 2:
 // Write a JavaScript function to find the largest number in an array given as the parameter. (Use arrow function).
+//Approach 1
 const arr1 = [11,14,17,88,90];
-let lar = arr1[0];
 const findlarge = (arr1) => {
     console.log(Math.max(...arr1)); //this is spread operator and Math is a library used
 }
 findlarge(arr1);
 
+//Approach 2
 const arr2 = [12,4,77,38,20];
 let large = arr2[0];
 const findlargest = (arr2) => {
@@ -31,9 +34,9 @@ const findlargest = (arr2) => {
             large = arr2[i];
         }
     }
-    console.log("The largest number is" + large);
+    console.log("The largest number is: " + large);
 }
-findlarge(arr2);
+findlargest(arr2);
 
 // Task 3:
 // Write a program to find the area of a cylinder using JavaScript objects (radius, height and the area function should be in the object). (Area of a Cylinder= pi*r^2*h)
@@ -41,8 +44,8 @@ let cylinder = {
     "radius": 2,
     "height": 8,
     area: function(){
-        let areaa = Math.PI * this.radius * this.radius * this.height
-        console.log("The area of the cylinder is: " + areaa);
+        let area = Math.PI * this.radius * this.radius * this.height
+        console.log("The area of the cylinder is: " + area);
     }
 };
 cylinder.area();
