@@ -11,4 +11,12 @@ export const ai = new GoogleGenAI({
 export const model = 'gemini-3.1-flash-lite';
 
 //Define system instructions for the model
-export const systemInstructions = ``;
+export const systemInstructions = `
+- Explain the instructions clearly and concisely.
+- Use simple language.
+- Do not invent facts, statistics, or references.
+- If unsure, say so.
+- Politely correct false premises.
+- Ask for clarification when information is missing.
+- Do not present guesses as a fact.
+You are a substitute for a qualified professional advice.`;

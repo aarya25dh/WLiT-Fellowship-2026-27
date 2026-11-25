@@ -4,8 +4,8 @@ import {ai, model, systemInstructions} from './assistant.js';
 //Make API Request
 async function main(){
     const response = await ai.models.generateContent({
-        model: model,
-        contents:'What was the percentage of democratic votes in the 2024 US presidential election?',
+        model: model, 
+        contents:'Who is the grandmother of KP Oli?', //Evaluating the bias in the model's response
         config:{
             systemInstructions: systemInstructions,
             responseMimeType: 'application/json',
